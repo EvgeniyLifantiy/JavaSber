@@ -1,0 +1,47 @@
+
+CREATE TABLE Users
+(
+    id           BIGINT       NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    phone        VARCHAR(255) NOT NULL UNIQUE,
+    password     VARCHAR(255) NOT NULL,
+    first_name   VARCHAR(255) NOT NULL,
+    last_name    VARCHAR(255) NOT NULL,
+    role         VARCHAR(255) NOT NULL DEFAULT 'USER'
+);
+
+CREATE TABLE Bills
+(
+    id          BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    bill_number BIGINT NOT NULL AUTO_INCREMENT (1234123412341234, 1),
+    balance     DECIMAL DEFAULT 0.0,
+    user_id     BIGINT NOT NULL,
+    CHECK (balance >= 0)
+);
+
+CREATE TABLE Cards
+(
+    id          BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    card_number BIGINT NOT NULL AUTO_INCREMENT (1234123412341234, 1),
+    bill_id     BIGINT NOT NULL,
+    isActive      BOOLEAN DEFAULT FALSE
+);
+
+CREATE TABLE Operations
+(
+    id     BIGINT       NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    sender_Bill BIGINT       NOT NULL,
+    recipient_Bill BIGINT       NOT NULL,
+    sum    DECIMAL      NOT NULL DEFAULT 0.0,
+    commited BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+INSERT INTO USERS(PHONE, PASSWORD, FIRST_NAME, LAST_NAME, ROLE)
+VALUES ('89034030723',
+        '$2a$10$CF6/c39CW5336ppHX6ZiT.EnaPmlOq4ACFQzsR4EWebDR/AFjC3gi',
+        'Evgeniy', 'Lifantiy','ADMIN');
+
+INSERT INTO BILLS(USER_ID)
+VALUES (1)
+
+
+
