@@ -29,7 +29,6 @@ public class OperationController implements HttpHandler {
     public void handle(HttpExchange exchange) {
         OutputStream outputStream=null;
         try {
-
             if (exchange.getRequestMethod().equals("GET")) {
                 Map<String, String> params = mapper.getParamValue(exchange.getRequestURI().getRawQuery());
                 if (params.get("id") != null) {
@@ -50,8 +49,6 @@ public class OperationController implements HttpHandler {
 
                 } else if (params.isEmpty()) {
                     //Else get all Operations
-
-
                     List<Operation> operationList =
                             operationService.getAllOperation();
                     exchange.sendResponseHeaders(200, mapper.EntityListToJson(operationList).getBytes().length);
@@ -67,7 +64,6 @@ public class OperationController implements HttpHandler {
 
             //add operation
             else if (exchange.getRequestMethod().equals("POST")) {
-
                 Operation operation = mapper.JsonToEntity(exchange,Operation.class);
                if (operationService.addOperation(operation.getsenderBill(),
                        operation.getRecipientBill(),

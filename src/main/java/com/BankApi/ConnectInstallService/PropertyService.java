@@ -14,10 +14,6 @@ public class PropertyService {
         return propertyPath;
     }
 
-    public void setPropertyPath(String propertyPath) {
-        this.propertyPath = propertyPath;
-    }
-
     private String propertyPath = "src/main/resources/Connection.properties";
     private Properties properties=new Properties();
 

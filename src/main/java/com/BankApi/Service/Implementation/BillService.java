@@ -44,7 +44,7 @@ public class BillService   {
         return billDao.getAllBillsByUserId(userId);
     }
 
-
+    //bigdecimal
     public double getBalanceOfBill(long billId, String phone)
             throws BillNotFoundException, UserNotFoundException, SQLException {
         User user = userService.getUserByPhone(phone);
