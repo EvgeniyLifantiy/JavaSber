@@ -60,6 +60,7 @@ public class BillController implements HttpHandler {
 
                         // /balance?billId=
                         // if exist billId-field, then get balance
+                        // key - phone
                         try {
 
                             String user=exchange.getPrincipal().getUsername();
