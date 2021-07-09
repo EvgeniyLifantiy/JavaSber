@@ -1,6 +1,7 @@
 package com.BankApi.Controller;
 
 import com.BankApi.Entity.User;
+import com.BankApi.SpringRealization.ApplicationContext;
 import com.BankApi.Tools.Mapper;
 import com.BankApi.Service.Implementation.UserService;
 import com.sun.net.httpserver.HttpExchange;
@@ -15,8 +16,8 @@ import java.io.OutputStream;
  */
 public class UserController implements HttpHandler {
 
-    Mapper mapper=new Mapper();
-    private UserService userService=new UserService();
+    private Mapper mapper= ApplicationContext.getInstance().getBean(Mapper.class);;
+    private UserService userService=ApplicationContext.getInstance().getBean(UserService.class);;
 
 //
 //    new User("89286259097","admin","Evgeniy",

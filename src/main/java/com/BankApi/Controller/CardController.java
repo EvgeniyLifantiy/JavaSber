@@ -20,9 +20,9 @@ import java.util.Map;
  * @project Bank-Api-Application
  */
 public class CardController implements HttpHandler {
-    private UserService userServiceImpl = new UserService();
+    private UserService userServiceImpl = ApplicationContext.getInstance().getBean(UserService.class);
     private CardService cardServiceImpl = ApplicationContext.getInstance().getBean(CardService.class);
-    private Mapper mapper = new Mapper();
+    private Mapper mapper = ApplicationContext.getInstance().getBean(Mapper.class);
 
     public CardController() {
     }

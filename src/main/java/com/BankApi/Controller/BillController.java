@@ -3,6 +3,7 @@ package com.BankApi.Controller;
 import com.BankApi.Entity.Bill;
 import com.BankApi.Exception.BillNotFoundException;
 import com.BankApi.Exception.UserNotFoundException;
+import com.BankApi.SpringRealization.ApplicationContext;
 import com.BankApi.Tools.Mapper;
 import com.BankApi.Service.Implementation.BillService;
 import com.BankApi.Service.Implementation.UserService;
@@ -20,9 +21,9 @@ import java.util.Map;
  * @project Bank-Api-Application
  */
 public class BillController implements HttpHandler {
-    private BillService billService = new BillService();
-    private UserService userService = new UserService();
-    private Mapper mapper=new Mapper();
+    private BillService billService = ApplicationContext.getInstance().getBean(BillService.class);
+    private UserService userService =  ApplicationContext.getInstance().getBean(UserService.class);
+    private Mapper mapper= ApplicationContext.getInstance().getBean(Mapper.class);
 
     public BillController() {
     }

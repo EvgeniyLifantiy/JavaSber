@@ -14,9 +14,8 @@ import java.util.Map;
  * @project Bank-Api-Application
  */
 public class Mapper {
+
     private final ObjectMapper mapper = new ObjectMapper();
-
-
 
     public Map<String, String> getParamValue(String query) {
         Map<String, String> result = new HashMap<>();

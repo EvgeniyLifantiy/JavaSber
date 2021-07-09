@@ -5,6 +5,7 @@ import com.BankApi.Entity.Operation;
 import com.BankApi.Entity.User;
 import com.BankApi.Exception.BillNotFoundException;
 import com.BankApi.Service.Implementation.OperationService;
+import com.BankApi.SpringRealization.ApplicationContext;
 import com.BankApi.Tools.Mapper;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
@@ -21,8 +22,8 @@ import java.util.Map;
  */
 public class OperationController implements HttpHandler {
 
-    Mapper mapper=new Mapper();
-    OperationService operationService=new OperationService();
+    private Mapper mapper= ApplicationContext.getInstance().getBean(Mapper.class);
+    private OperationService operationService=ApplicationContext.getInstance().getBean(OperationService.class);;
 
     @Override
     public void handle(HttpExchange exchange) {
