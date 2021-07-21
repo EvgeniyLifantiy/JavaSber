@@ -10,9 +10,12 @@ public class ApplicationContext {
 
     private static volatile ApplicationContext applicationContext;
 
-    private Config config=new ConfigImpl("com.BankApi");
+    private  MapConfig mapConfig=new MapConfig();
+    private  ConfigScanner configScanner=new ConfigScanner();
 
-//    private ConfigScanner configScanner;
+    private  Config config=new ConfigImpl(mapConfig.getMapOfImpl(),
+            configScanner.getPackageToScan());;
+
 
     public static ApplicationContext getInstance(){
         ApplicationContext localInstance = applicationContext;

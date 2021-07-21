@@ -10,7 +10,9 @@ import java.util.List;
  */
 public interface OperationDao {
 
+
      boolean addOperation(long senderBill,long recipientBill,double sum);
+
 
      List<Operation> getAllOperations();
 
