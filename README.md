@@ -25,7 +25,7 @@
 
 ## Others
 
-### В файле Test.txt примеры запросов c json 
+### В файле Test.txt (resoureces) примеры запросов c json 
 
 http://localhost:8080/cards?id=1234123412341234 GET получить информацию о карте по номеру
 
