@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e5626fc5-b6f2-4c15-a70d-763c25a792f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/target/classes/Connection.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CreateTables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TruncateTablse.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UpdateReferences.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/ConnectInstallService/DBConnector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/ConnectInstallService/PropertyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Controller/BillController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Controller/CardController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Controller/OperationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Dao/Api/BillDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Dao/Api/CardDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Dao/Api/OperationDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Dao/Api/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Dao/Implementation/BillDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Dao/Implementation/CardDaoImlp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Dao/Implementation/OperationDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Dao/Implementation/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Entity/Bill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Entity/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Entity/Operation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Exception/AlreadyCommitedOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Exception/BillNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Exception/CardNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Exception/UserNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Service/Implementation/BillService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Service/Implementation/CardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Service/Implementation/OperationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Service/Implementation/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/SpringRealization/ApplicationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/SpringRealization/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/SpringRealization/ConfigImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/SpringRealization/ConfigScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/SpringRealization/MapConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Tools/AdminAuthenticator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Tools/Mapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BankApi/Tools/UserAuthenticator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BankApi/ConnectInstallService/PropertyServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BankApi/Service/BillServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BankApi/Service/CardServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BankApi/Service/UserServiceTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1v5ipjblEAL7stVFzrd0rVWcnDX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.BankApi.SpringRealization" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.BankApi.Main" />
+      <module name="Bank-Api-Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BankApi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5626fc5-b6f2-4c15-a70d-763c25a792f4" name="Default Changelist" comment="" />
+      <created>1625858534846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625858534846</updated>
+      <workItem from="1625858536196" duration="1219000" />
+      <workItem from="1625909246895" duration="1787000" />
+      <workItem from="1626005417044" duration="2901000" />
+      <workItem from="1626439866465" duration="343000" />
+      <workItem from="1626856209039" duration="1704000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
