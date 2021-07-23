@@ -2,7 +2,7 @@
 
 ## Api requests ##
 
-1.1 http://localhost:8080/api/cards POST добавить карту по номеру счета (в заголовках или в теле )
+1.1 http://localhost:8080/api/cards POST добавить карту по номеру счета (в теле )
 
 1.2 http://localhost:8080/cards?billId=1234123412341234 GET получить все карты по счету
 
@@ -17,11 +17,11 @@
 
 3.1 http://localhost:8080/user POST создать нового пользователя 
 
-3.2 http://localhost:8080/bills POST создать счет (по номеру. в заголовке)
+3.2 http://localhost:8080/bills POST создать счет (по номеру в теле)
 
-3.3 http://localhost:8080/api/cards PUT изменить статус карты по номеру счета (в заголовках или в теле)
+3.3 http://localhost:8080/api/cards PUT изменить статус карты по номеру счета ( в теле)
 
-3.4 http://localhost:8080/api/operations PUT изменить статус операции (заголовок или в теле)
+3.4 http://localhost:8080/api/operations PUT изменить статус операции ( в теле)
 
 ## Others
 
@@ -29,7 +29,7 @@
 
 http://localhost:8080/cards?id=1234123412341234 GET получить информацию о карте по номеру
 
-http://localhost:8080/bills GET получить все счета(по номеру в заголовке или в теле) или будет получено по авторизованному пользователю
+http://localhost:8080/bills GET получить все счета по номеру телефона(в теле) или будет получено по авторизованному пользователю
 
 http://localhost:8080/bills?id= GET получить счет по id
 
