@@ -80,9 +80,10 @@ public class OperationController implements HttpHandler {
 
             //change status
             else if (exchange.getRequestMethod().equals("PUT")) {
-                long id=Long.parseLong(exchange.getRequestHeaders().getFirst("operationId"));
+
+                long id=mapper.JsonToEntity(exchange,long.class);
                 if(operationService.submitOperation(id)) {
-                    String r = "Successful adding";
+                    String r = "Successful change";
                     exchange.sendResponseHeaders(200, r.length());
                     outputStream = exchange.getResponseBody();
                     outputStream.write(r.getBytes());

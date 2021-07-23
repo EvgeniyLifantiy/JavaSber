@@ -1,6 +1,7 @@
 package com.BankApi.Controller;
 
 import com.BankApi.Entity.Bill;
+import com.BankApi.Entity.Card;
 import com.BankApi.Exception.BillNotFoundException;
 import com.BankApi.Exception.UserNotFoundException;
 import com.BankApi.SpringRealization.ApplicationContext;
@@ -89,8 +90,7 @@ public class BillController implements HttpHandler {
                         //Else get all Bills by UserID
                         String user=exchange.getPrincipal().getUsername();
                         try{
-                            user=userService.getUserByPhone(exchange.getRequestHeaders().getFirst("phone"))
-                                    .getPhone();
+                            user=userService.getUserByPhone(mapper.JsonToEntity(exchange,String.class)).getPhone();
                         }catch (Exception e){
                             System.out.println("Такого пользователя нет, будет выдан список текущего пользователя");
                         }
@@ -113,10 +113,7 @@ public class BillController implements HttpHandler {
 
             else if (exchange.getRequestMethod().equals("POST")) {
                 //Add new Bill
-
-                        if (billService.addBill(userService.getUserByPhone(
-                                exchange.getRequestHeaders().getFirst("phone")).getId()
-                        )) {
+                        if (billService.addBill(mapper.JsonToEntity(exchange,long.class))) {
                             String r="Successful adding";
                             exchange.sendResponseHeaders(200,r.length());
                              outputStream = exchange.getResponseBody();

@@ -23,6 +23,13 @@ Adding operation(not commited):
     "sum" : 100
 }
 
+Adding bill:
+{
+   "billId" : 1234123412341234
+}
+
+
+Дисклеймер:
 
 1.1 http://localhost:8080/api/cards POST добавить карту по номеру счета (в заголовках)
 

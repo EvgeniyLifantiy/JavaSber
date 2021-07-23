@@ -1,6 +1,7 @@
 package com.BankApi.Controller;
 
 import com.BankApi.Entity.Card;
+import com.BankApi.Entity.User;
 import com.BankApi.Exception.BillNotFoundException;
 import com.BankApi.Exception.CardNotFoundException;
 import com.BankApi.SpringRealization.ApplicationContext;
@@ -89,8 +90,9 @@ public class CardController implements HttpHandler {
 
             else if (exchange.getRequestMethod().equals("POST")) {
 
-                        boolean status=cardServiceImpl.addCard(Long.parseLong(
-                                exchange.getRequestHeaders().getFirst("billId")));
+                        Card card=mapper.JsonToEntity(exchange,Card.class);
+                        System.out.println(card );
+                        boolean status=cardServiceImpl.addCard(card.getBillId());
                         if (status) {
                             String r="Successful adding";
                             exchange.sendResponseHeaders(200,r.length());
@@ -111,8 +113,7 @@ public class CardController implements HttpHandler {
 
             else if (exchange.getRequestMethod().equals("PUT") ) {
 
-                if (exchange.getRequestHeaders().getFirst("billId") != null) {
-                        long id=Long.parseLong(exchange.getRequestHeaders().getFirst("billId"));
+                        long id=mapper.JsonToEntity(exchange,long.class);
 
                         if (cardServiceImpl.changeCardStatus
                                 (id, !cardServiceImpl.getCardById(id).getStatus()) //reverse current status
@@ -125,9 +126,6 @@ public class CardController implements HttpHandler {
                         } else {
                             exchange.sendResponseHeaders(406, -1);
                         }
-                    } else {
-                        exchange.sendResponseHeaders(404, -1);
-                    }
             }
 
 
