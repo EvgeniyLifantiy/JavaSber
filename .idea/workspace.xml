@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5626fc5-b6f2-4c15-a70d-763c25a792f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/BankApi/Service/OperationServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BankApi/Controller/BillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BankApi/Controller/BillController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BankApi/Controller/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BankApi/Controller/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BankApi/Controller/OperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BankApi/Controller/OperationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BankApi/Dao/Implementation/BillDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BankApi/Dao/Implementation/BillDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BankApi/Dao/Implementation/CardDaoImlp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BankApi/Dao/Implementation/CardDaoImlp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BankApi/Dao/Implementation/OperationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BankApi/Dao/Implementation/OperationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BankApi/Dao/Implementation/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BankApi/Dao/Implementation/UserDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1v5ipjblEAL7stVFzrd0rVWcnDX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,7 +53,7 @@
       <recent name="E:\Mega\Java\JavaSber\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.BankApi.Main" />
       <module name="Bank-Api-Application" />
@@ -66,9 +67,87 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardServiceTest.addCardBad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank-Api-Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BankApi.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.BankApi.Service" />
+      <option name="MAIN_CLASS_NAME" value="com.BankApi.Service.CardServiceTest" />
+      <option name="METHOD_NAME" value="addCardBad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardServiceTest.getCardById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank-Api-Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BankApi.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.BankApi.Service" />
+      <option name="MAIN_CLASS_NAME" value="com.BankApi.Service.CardServiceTest" />
+      <option name="METHOD_NAME" value="getCardById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank-Api-Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BankApi.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.BankApi.Service" />
+      <option name="MAIN_CLASS_NAME" value="com.BankApi.Service.OperationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperationServiceTest.getOperationSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank-Api-Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BankApi.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.BankApi.Service" />
+      <option name="MAIN_CLASS_NAME" value="com.BankApi.Service.OperationServiceTest" />
+      <option name="METHOD_NAME" value="getOperationSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CardServiceTest.getCardById" />
+        <item itemvalue="JUnit.OperationServiceTest.getOperationSuccess" />
+        <item itemvalue="JUnit.OperationServiceTest" />
+        <item itemvalue="JUnit.CardServiceTest.addCardBad" />
       </list>
     </recent_temporary>
   </component>
@@ -87,7 +166,9 @@
       <workItem from="1626856209039" duration="2764000" />
       <workItem from="1626862088140" duration="2003000" />
       <workItem from="1627028257793" duration="621000" />
-      <workItem from="1627031784595" duration="4619000" />
+      <workItem from="1627031784595" duration="5930000" />
+      <workItem from="1627208909979" duration="731000" />
+      <workItem from="1627301065065" duration="1098000" />
     </task>
     <task id="LOCAL-00001" summary="Spring hash">
       <created>1627031932980</created>
@@ -96,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627031932981</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Correct requests">
+      <created>1627041089924</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627041089924</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +204,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring hash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring hash" />
+    <MESSAGE value="Correct requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct requests" />
   </component>
 </project>

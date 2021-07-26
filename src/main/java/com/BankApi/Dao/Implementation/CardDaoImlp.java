@@ -3,6 +3,7 @@ package com.BankApi.Dao.Implementation;
 import com.BankApi.ConnectInstallService.DBConnector;
 import com.BankApi.Dao.Api.CardDao;
 import com.BankApi.Entity.Card;
+import com.BankApi.SpringRealization.ApplicationContext;
 import org.jetbrains.annotations.Nullable;
 
 import java.sql.PreparedStatement;
@@ -17,7 +18,7 @@ import java.util.List;
  */
 public class CardDaoImlp implements CardDao {
 
-    private DBConnector dbConnector=new DBConnector();
+    private DBConnector dbConnector= ApplicationContext.getInstance().getBean(DBConnector.class);
 
     @Override
     public boolean addCard(Card card) {

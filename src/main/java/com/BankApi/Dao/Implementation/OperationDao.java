@@ -6,6 +6,7 @@ import com.BankApi.Entity.Operation;
 import com.BankApi.Entity.User;
 import com.BankApi.Exception.AlreadyCommitedOperation;
 import com.BankApi.Role;
+import com.BankApi.SpringRealization.ApplicationContext;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -19,7 +20,7 @@ import java.util.List;
  * @project Bank-Api-Application
  */
 public class OperationDao implements com.BankApi.Dao.Api.OperationDao {
-    private DBConnector dbConnector=new DBConnector();
+    private DBConnector dbConnector= ApplicationContext.getInstance().getBean(DBConnector.class);
 
     public boolean addOperation(long senderBill,long recipientBill,double sum){
         try (PreparedStatement preparedStatement=dbConnector.getConnection().prepareStatement(

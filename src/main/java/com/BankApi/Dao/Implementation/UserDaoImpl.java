@@ -4,6 +4,7 @@ import com.BankApi.ConnectInstallService.DBConnector;
 import com.BankApi.Dao.Api.UserDao;
 import com.BankApi.Role;
 import com.BankApi.Entity.User;
+import com.BankApi.SpringRealization.ApplicationContext;
 import org.jetbrains.annotations.Nullable;
 
 import java.sql.PreparedStatement;
@@ -16,7 +17,7 @@ import java.sql.SQLException;
  */
 public class UserDaoImpl implements UserDao {
 
-    private DBConnector dbConnector=new DBConnector();
+    private DBConnector dbConnector= ApplicationContext.getInstance().getBean(DBConnector.class);
     @Override
     public boolean addUser(User user) {
         try (PreparedStatement preparedStatement=dbConnector.getConnection().prepareStatement(
